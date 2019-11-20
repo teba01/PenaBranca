@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_calendario"
+            android:icon="@drawable/iconecalendario"
+            android:title="Calendario" />
+        <item
+            android:id="@+id/nav_pontos"
+            android:icon="@drawable/pontos"
+            android:title="Pontos" />
+        <item
+            android:id="@+id/nav_mediuns"
+            android:icon="@drawable/mediuns"
+            android:title="Mediuns" />
+        <item
+            android:id="@+id/nav_historia"
+            android:icon="@drawable/historia"
+            android:title="Historia" />
+        <item
+            android:id="@+id/nav_linhas"
+            android:icon="@drawable/mediuns"
+            android:title="Linhas" />
+        <item
+            android:id="@+id/nav_local"
+            android:icon="@drawable/ic_local_24dp"
+            android:title="Como Chegar" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_nav_login"
+                android:icon="@drawable/ic_login"
+                android:title="Filhos" />
+            <item
+                android:id="@+id/nav_doacao"
+                android:icon="@drawable/icondoar"
+                android:title="Doe Aqui" />
+        </menu>
+    </item>
+
+</menu>

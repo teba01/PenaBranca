@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    //Deixar a parte de cima da tela com um
+    degrader e um no canto esquerdo mais redondo.
+    <gradient
+        android:startColor="#008000"
+        android:endColor="#008000"
+        android:angle="45"/>
+
+</shape>

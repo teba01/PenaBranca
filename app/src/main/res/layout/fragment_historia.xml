@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    tools:context=".com.example.consulente.HistoriaFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+
+        android:text="O Templo Cacique Pena Branca e Pai Benedito De Angola."
+
+        android:padding="20dp"
+        android:textSize="23dp"
+        android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:text="Em 2010, sob as bençãos de Oxalá, Xangô, Iansã e Oxum, o Templo Cacique Pena Branca e Pai Benedito D'Angôla, regido pela sacerdotiza Daya Dias de Xangô e Iansã e suas entidades espirituais, deram início as suas atividades, após a sua coroação como Babalorixá.
+
+ Hoje, com 20 anos de Umbanda e 5 anos como Babalorixá, além de gerir o templo com seus quase 60 Iaôs (filhos de santo), junto com outros líderes religiosos, integra o Comitê de Diálogo Interreligioso, que tem como finalidade findar a intolerância religiosa no nosso país.
+
+A nossa missão é fazer a caridade com amor, através de atendimento em forma de consultas com guias espirituais (Caboclos, Pretos Velhos, Boiadeiros, Marinheiros, Baianos, Ciganos, Linhas de Cura, Exus, Pomba Giras e Exus Mirins) sempre respeitando as leis de Zambi e de todos os Orixás e o livre arbítrio na busca do caminho de evolução de cada indivíduo, ajudando a transformar a vida das pessoas sempre na direção do bem.
+
+Sendo uma instituição filantrópica, ou seja, não visa fins lucrativos,  portanto, não é cobrado por consultas, passes e outras atividades."
+            />
+</LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

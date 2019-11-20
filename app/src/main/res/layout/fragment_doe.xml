@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    tools:context=".com.example.consulente.DoeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="0dp"
+
+            android:textSize="18dp"
+            android:text="Como instituição filantrópica, nossa casa sobrevive a base de doações e caridade dos filhos, consulentes e amigos." />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="10dp"
+            android:padding="20dp"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:text="Caso queira fazer doações, temos os seguintes formas de coleta:" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="10dp"
+            android:padding="20dp"
+            android:textStyle="italic"
+            android:textSize="16dp"
+            android:text="Em nossas caixas de doação localizadas no Templo."
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="10dp"
+            android:padding="20dp"
+            android:text="Deposito no banco Bradesco:
+
+
+            Agência: 3673-0
+
+           C/C: 200.003-2
+
+
+            Deglair Dias da Silva"
+            android:textAlignment="center"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            android:src="@drawable/doacao" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
