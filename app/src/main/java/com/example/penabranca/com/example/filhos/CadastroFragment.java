@@ -40,7 +40,7 @@ public class CadastroFragment extends Fragment {
         // Inflate the layout for this fragment
         vista = inflater.inflate(R.layout.fragment_cadastro, container, false);
 
-        botaocadastrar = vista.findViewById(R.id.botaoplay16);
+        botaocadastrar = vista.findViewById(R.id.botaocadastrar);
         nome = vista.findViewById(R.id.nome);
         senha = vista.findViewById(R.id.senha);
         email = vista.findViewById(R.id.email);
@@ -56,13 +56,14 @@ public class CadastroFragment extends Fragment {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    Toast.makeText(getActivity(),"Salvo",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getActivity(), "Salvo", Toast.LENGTH_SHORT).show();
                                 } else {
-                                    Toast.makeText(getActivity(),"Erro",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getActivity(), "Erro", Toast.LENGTH_SHORT).show();
 
                                 }
                             }
                         });
+
             }
 
 
@@ -72,6 +73,5 @@ public class CadastroFragment extends Fragment {
 
         return vista;
     }
-
 
 }
