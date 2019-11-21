@@ -47,7 +47,7 @@ public class CadastroFragment extends Fragment {
         telefone = vista.findViewById(R.id.telefone);
         swtAdm = vista.findViewById(R.id.swtAdm);
         mFirebaseAuth = FirebaseAuth.getInstance();
-
+//
         botaocadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
