@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1031402781676-odrq5ogfgba2o0ibqp5qa7eujoodp2qo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.penabranca",
+            "certificate_hash": "6c7e3e708a534c6483084dd54dc95c85102ed8aa"
+          }
+        },
+        {
           "client_id": "1031402781676-mmi4aoa0r78sg5ca035d1rlv40alffkt.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

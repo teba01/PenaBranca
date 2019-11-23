@@ -4,6 +4,8 @@ import android.os.Bundle;
 
 import com.example.penabranca.R;
 import com.example.penabranca.com.example.PontosFragment;
+import com.example.penabranca.com.example.consulente.CalendarioFragment;
+import com.example.penabranca.com.example.consulente.CdMediunFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -82,9 +84,17 @@ public class FilhoActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = menuItem.getItemId();
 
-        if (id == R.id.nav_home) {
-            // Handle the camera action
+        if (id == R.id.nav_banhos) {
+            BanhosFragment fragment = new BanhosFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame_layout, fragment, "Work");
+            fragmentTransaction.commit();
+
         } else if (id == R.id.nav_calendario_filho) {
+            CalendarioFragment fragment = new CalendarioFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame_layout, fragment, "Calendario");
+            fragmentTransaction.commit();
 
         } else if (id == R.id.nav_pontos) {
             PontosFragment fragment = new PontosFragment();
@@ -93,8 +103,23 @@ public class FilhoActivity extends AppCompatActivity
             fragmentTransaction.commit();
 
         } else if (id == R.id.nav_diretriz) {
+            DiretrizesFragment fragment = new DiretrizesFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame_layout, fragment, "Work");
+            fragmentTransaction.commit();
 
 
+        }else if (id == R.id.nav_velas) {
+            VelasFragment fragment = new  VelasFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame_layout, fragment, "Work");
+            fragmentTransaction.commit();
+
+        }else if (id == R.id.nav_cde) {
+           CdMediunFragment fragment = new  CdMediunFragment ();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame_layout, fragment, "Work");
+            fragmentTransaction.commit();
 
         }
 

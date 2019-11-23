@@ -3,12 +3,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".com.example.consulente.LinhasFragment">
+    android:layout_marginTop="60dp"
+    tools:context=".com.example.consulente.LinhFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:text="Exu "
+                android:textAlignment="center"
+                android:textColor="#FF0000"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="    O Verdadeiro Exu não faz mal a ninguem, mas joga para cima de quem merece, quem realmente é mau, recebe o mau de volta através da força dele. Ele devolve, ás vezes até com mais intensidade os trabalhos malignos que alguns fizeram contra outros. Alguns Exus foram pessoas como politicos, médicos, advogados, trabalhadores, vadios, prostitutas, pessoas comuns, padres, etc., que cometeram alguma falha e escolheram, ou foram escolhidos para, vir nesta forma  a fim de redimir seus erros passados, outros são espiritos evoluidos que escolheram ajudar e continuar sua evolução atendendo e orientando as pessoas, e combatendo o mal. Em seus trabalhos de magia, Exu corta demandas, desfaz trabalhos malignos, feitiços e magia negra, feitos por espiritos obscuros, sem luz ( Kiumbas ). Ajudam a limpar, retirando os espiritos obsessores e os encaminhando para a luz ou para que possam cumprir suas penas  em outros lugares no astral inferior."
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text=" Pomba-Gira"
+                android:textColor="#FF0000"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text=" Pomba-Gira é o Exu-fêmea, é uma entidade que trabalha na Umbanda e na linha de esquerda e é uma entidade que tem em sua actuação central a sexualidade e a magia.
+    Suas oferendas são inúmeras, sempre acompanhadas de champanhe de boa qualidade, bons vinhos, bebidas fortes como o gim, bourbom e em isolados casos a pinga. A ela são oferecidas cigarrilhas e cigarros de boa qualidade, rosas vermelhas, sempre em numero ímpar, bijutaria de boa qualidade, aneis, batons, perfumes, enfim tudo o que todas as mulheres gostam e prezam.
+    "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text=" Cablocos"
+                android:textColor="@color/colorPrimary"
+                android:textSize="23dp"
+                />
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:text="Existem variações no entendimento que os umbandistas têm sobre o que sejam os caboclos. As variações são próprias do movimento umbandista, notavelmente plural, mas há consenso na Umbanda, no fato de que os Caboclos são espíritos de humanos que já viveram encarnados no plano físico e são, portanto, nossos ancestrais. É interessante notar que em alguns cultos afro-brasileiros, os caboclos são considerados “encantados” e se relacionam com os espíri­tos da natureza, recebendo nomes de animais, plantas ou outros elementos naturais. Essa percepção se aproxima das lendas indígenas que narram um tempo em que os animais falavam e viviam em comunhão com os homens, podendo um se transformar no outro." />
+
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

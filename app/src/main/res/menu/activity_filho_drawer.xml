@@ -18,12 +18,17 @@
             android:title="Diretrizes" />
         <item
             android:id="@+id/nav_banhos"
-            android:icon="@drawable/diretrizes"
+            android:icon="@drawable/banho"
             android:title="Banhos" />
         <item
             android:id="@+id/nav_velas"
-            android:icon="@drawable/diretrizes"
+            android:icon="@drawable/vela"
             android:title="Velas" />
+
+        <item
+            android:id="@+id/nav_cde"
+            android:icon="@drawable/mediuns"
+            android:title="Cadastar Entidades " />
 
 
     </group>

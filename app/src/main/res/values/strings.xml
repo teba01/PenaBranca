@@ -19,4 +19,17 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_adm">AdmActivity</string>
+    <string name="entidades">Penabranca</string>
+    <string name="cabloco">Cabloco:</string>
+    <string name="exu">Exu:</string>
+    <string name="preto">Preto Velho:</string>
+    <string name="ere">Erê:</string>
+    <string name="baiano">Baiano:</string>
+    <string name="marinheiro">Marinheiro:</string>
+    <string name="cigano">Cigano:</string>
+    <string name="pomba">PombaGira:</string>
+    <string name="exum">Exu Mirim:</string>
+    <string name="boiadeiro">Boiadeiro:</string>
+    <string name="md">Medium:</string>
+
 </resources>

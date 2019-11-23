@@ -40,6 +40,11 @@
                 android:id="@+id/nav_doacao"
                 android:icon="@drawable/icondoar"
                 android:title="Doe Aqui" />
+
+            <item
+                android:id="@+id/nav_cd"
+                android:icon="@drawable/mediuns"
+                android:title="Cadastar" />
         </menu>
     </item>
 

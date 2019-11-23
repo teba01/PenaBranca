@@ -62,9 +62,9 @@ public class CadastroFragment extends Fragment {
         ref = database.getReference().child("Usuario");
 
 //
-        //botaocadastrar.setOnClickListener(new View.OnClickListener() {
-            //@Override
-           // public void onClick(View v) {
+        botaocadastrar.setOnClickListener(new View.OnClickListener() {
+          @Override
+           public void onClick(View v) {
                // mFirebaseAuth.createUserWithEmailAndPassword(email.getText().toString(), senha.getText().toString())
                       //  .addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
                       //      @Override
@@ -78,30 +78,20 @@ public class CadastroFragment extends Fragment {
         //  }
         //  });
 
-        // }
+              performCadastro();
+
+         }
 
 
 
-        // });
-
-        botaocadastrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                usuario.setNome(nome.getText().toString());
-                usuario.setSenha(senha.getText().toString());
-                usuario.setTelefone(telefone.getText().toString());
-                usuario.setEmail(email.getText().toString());
+        });
 
 
 
-                ref.child(usuario.getNome()).setValue(usuario);
-
-
-    }
 
 
 
-});
+
 
 
      botaovoltar.setOnClickListener(new View.OnClickListener() {
@@ -115,5 +105,33 @@ public class CadastroFragment extends Fragment {
 
         return vista;
     }
+    public void performCadastro(){
+        mFirebaseAuth.createUserWithEmailAndPassword(email.getText().toString(), senha.getText().toString())
+                .addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            SalvarDados();
+                            Toast.makeText(getActivity(), "Salvo", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(getActivity(), "Erro", Toast.LENGTH_SHORT).show();
 
+                        }
+                    }
+                });
+
+
+
+
+        }
+        public void SalvarDados (){
+            usuario.setNome(nome.getText().toString());
+            usuario.setSenha(senha.getText().toString());
+            usuario.setTelefone(telefone.getText().toString());
+            usuario.setEmail(email.getText().toString());
+
+
+
+            ref.child(usuario.getNome()).setValue(usuario);
+        }
 }

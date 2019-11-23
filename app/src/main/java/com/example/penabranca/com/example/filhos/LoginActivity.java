@@ -39,42 +39,41 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
+
+
         botaologin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                performLogin();
 
 
             }
         });
     }
 
-    private void login(final String email, String password) {
-        mFirebaseAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+    public void performLogin(){
+
+
+
+        mFirebaseAuth.signInWithEmailAndPassword(usuario.getText().toString(), senha.getText().toString())
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            Intent i = new Intent(LoginActivity.this,FilhoActivity.class);
-                            startActivity(i);
 
+
+                        if(task.isSuccessful()){
+
+                            Intent intent = new Intent(LoginActivity.this,FilhoActivity.class);
+                            startActivity(intent);
                             Toast.makeText(LoginActivity.this, "Bem Vindo",
                                     Toast.LENGTH_SHORT).show();
 
-
-
-
-                        }else {
+                        }
+                        else {
                             Toast.makeText(LoginActivity.this, "Usuario ou Senha incorreto",
                                     Toast.LENGTH_SHORT).show();
-
-
                         }
-
-
                     }
                 });
-
-
     }
 }

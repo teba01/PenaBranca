@@ -98,6 +98,10 @@ public class NavigacaoCActivity extends AppCompatActivity
             fragmentTransaction.commit();
 
         } else if (id == R.id.nav_mediuns) {
+            MediunFragment fragment = new MediunFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame_layout, fragment, "Pontos");
+            fragmentTransaction.commit();
 
         } else if (id == R.id.nav_historia) {
             HistoriaFragment fragment = new HistoriaFragment();
@@ -105,21 +109,41 @@ public class NavigacaoCActivity extends AppCompatActivity
             fragmentTransaction.replace(R.id.frame_layout, fragment, "Historia");
             fragmentTransaction.commit();
         } else if (id == R.id.nav_linhas) {
-
-            Intent i =new Intent(NavigacaoCActivity.this, LoginActivity.class);
-            startActivity(i);
-        }else if (id == R.id.nav_local){
-
-        }else if (id == R.id.nav_nav_login){
-            CadastroFragment fragment = new CadastroFragment();
+            LinhasFragment fragment = new LinhasFragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.frame_layout, fragment, "Doacao");
             fragmentTransaction.commit();
+
+        }else if (id == R.id.nav_local){
+           // CdMediunFragment fragment = new CdMediunFragment();
+          //  FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+           // fragmentTransaction.replace(R.id.frame_layout, fragment, "Pontos");
+           // fragmentTransaction.commit()
+
+            LocalFragment fragment = new LocalFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame_layout, fragment, "Doacao");
+            fragmentTransaction.commit();
+
+        }else if (id == R.id.nav_nav_login){
+
+            Intent i =new Intent(NavigacaoCActivity.this, LoginActivity.class);
+            startActivity(i);
+           // CadastroFragment fragment = new CadastroFragment();
+           // FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+          //  fragmentTransaction.replace(R.id.frame_layout, fragment, "Doacao");
+          //  fragmentTransaction.commit();
 
 
 
         }else if (id == R.id.nav_doacao){
             DoeFragment fragment = new DoeFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame_layout, fragment, "Doacao");
+            fragmentTransaction.commit();
+
+        }else if (id == R.id.nav_cd){
+            CadastroFragment fragment = new CadastroFragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.frame_layout, fragment, "Doacao");
             fragmentTransaction.commit();
